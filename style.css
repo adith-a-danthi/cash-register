@@ -86,7 +86,7 @@ button:hover {
 	border: 1px dashed var(--primary-color);
 	border-radius: 5px;
 	padding: 0.5em;
-	margin: 0.5em;
+	margin: 1em;
 	text-align: center;
 }
 
@@ -130,18 +130,21 @@ td {
 	display: none;
 }
 
-#change-text {
+#error {
+	display: none;
+	border: 1px dashed var(--tertiary-color);
+	border-radius: 5px;
+	padding: 0.5em;
 	margin: 1em;
+	text-align: center;
 }
 
 @media screen and (max-width: 600px) {
-
 	.title {
 		font-size: 1.75rem;
 	}
 
 	img {
-
 		max-height: 5em;
 		max-width: 7.5em;
 	}
