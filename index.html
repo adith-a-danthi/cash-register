@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Cabin&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./style.css" />
+		<title>Cash Register</title>
+	</head>
+	<body>
+		<main class="card col">
+			<h1 class="title">Cash Register</h1>
+			<img src="./assets/cyborg-cash-register.png" alt="cash-register" />
+			<p>Enter the bill amount and cash given by the customer</p>
+			<div class="input-field">
+				<label for="billAmt">Bill Amount</label>
+				<input type="number" id="billAmt" />
+			</div>
+			<div class="input-field" id="cash">
+				<label for="cashGiven"> Cash Given</label>
+				<input type="number" id="cashGiven" />
+			</div>
+			<div class="btn-group">
+				<button id="nextBtn">Next</button>
+				<button id="checkBtn">Check</button>
+			</div>
+			<div id="result">
+				<div id="change-text">
+					Change to be returned: <span id="change"></span>
+				</div>
+				<table>
+					<thead>
+						<tr>
+							<th>Denomination</th>
+							<th>2000</th>
+							<th>500</th>
+							<th>100</th>
+							<th>20</th>
+							<th>10</th>
+							<th>5</th>
+							<th>1</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th>Number</th>
+							<td>0</td>
+							<td>0</td>
+							<td>0</td>
+							<td>0</td>
+							<td>0</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</main>
+	</body>
+</html>
