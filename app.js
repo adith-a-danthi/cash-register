@@ -19,9 +19,8 @@ const denomination = [2000, 500, 100, 20, 10, 5, 1];
  * @param {number} bill - The bill amount
  * @param {number} cash - The cash given
  */
-function calculateChange(bill, cash) {
-	const change = cash - bill;
-    changeValue.innerHTML = change;
+const calculateChange = (bill, cash) => {
+    changeValue.innerHTML = cash - bill;
     resultDiv.style.display = "block";
 }
 
@@ -30,7 +29,7 @@ function calculateChange(bill, cash) {
 * @param {number} bill - The bill amount
 * @param {number} cash - The cash given
 */
-function calculateNoOfNotes(bill, cash) {
+const calculateNoOfNotes = (bill, cash) => {
 	let balance = cash - bill;
 
 	if (balance < 0) {
@@ -49,14 +48,14 @@ function calculateNoOfNotes(bill, cash) {
 }
 
 // Function to hide error message
-function hideError() {
+const hideError = () => {
     errorDiv.style.display = "none";
 }
 
 /** Function to display error message
  * @param {error} error - The error message
  */
-function showError(error) {
+const showError = (error) => {
     errorDiv.innerHTML = error;
     errorDiv.style.display = "block";
 }
